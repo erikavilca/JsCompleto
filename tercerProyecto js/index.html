@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockerizando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="carrito.html"><button class="btnCarrito">carrito</button></a>
+        <h1>Hockerizando</h1>
+        <input id="buscador" type="text" placeholder="Buescar producto...">
+        <!-- <button class="carrito">Carrito</button> -->
+    </header>
+    <nav>
+        <div class="filtrar">
+            <h3>Filtrado de</h3>
+            <form id="FiltradoFinal">
+                    <legend>Categorias:</legend>
+                    <label><input type="radio" name="categoria" value="palos"> palos</label><br>
+                    <label><input type="radio" name="categoria" value="bolsos"> Bolsos</label><br>
+                    <label><input type="radio" name="categoria" value="accesorios"> Accesorios</label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="resultado">
+            <h3>Productos elegidos</h3>
+
+        </div>
+        <!-- aca va a estar el producto selecionado y dependiendo la caterori se le pone un
+        icono de el producto, nombre y total -->
+    </nav>
+    <main>
+        <div id="container">
+            <!-- Aqui se le agregan los div -->
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+<script src="./main.js"></script>
+
+</html>
