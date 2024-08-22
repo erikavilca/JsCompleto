@@ -5,41 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockerizando</title>
     <link rel="stylesheet" href="style.css">
-</head>
-
+    </head>
 <body>
     <header>
-        <a href="carrito.html"><button class="btnCarrito">carrito</button></a>
-        <h1>Hockerizando</h1>
+
+        <h1>ShoppingJr</h1>
         <input id="buscador" type="text" placeholder="Buescar producto...">
-        <!-- <button class="carrito">Carrito</button> -->
+        <a href="carrito.html"><button class="btnCarrito">CARRITO</button></a>
+        
     </header>
     <nav>
-        <div class="filtrar">
-            <h3>Filtrado de</h3>
-            <form id="FiltradoFinal">
+        <div class="containerNav">
+            <div class="filtrar">
+                <h3>Filtrado de</h3>
+                <form id="Filtrado1">
                     <legend>Categorias:</legend>
-                    <label><input type="radio" name="categoria" value="palos"> palos</label><br>
-                    <label><input type="radio" name="categoria" value="bolsos"> Bolsos</label><br>
-                    <label><input type="radio" name="categoria" value="accesorios"> Accesorios</label>
-                <button type="submit">Enviar</button>
-            </form>
+                    <label><input type="radio" name="category" value="men's clothing"> ropa hombre</label><br>
+                    <label><input type="radio" name="category" value="women's clothing"> ropa mujer</label><br>
+                    <label><input type="radio" name="category" value="jewelery"> Accesorios</label><br>
+                    <label><input type="radio" name="category" value="electronics"> electro</label><br>
+                    <button type="submit">buscar >></button>
+                </form>
+                <form id="Filtrado2">
+                    <legend>Precio:</legend>
+                    <label><input type="radio" name="price" value="menorPrecio"> Menor a mayor </label><br>
+                    <label><input type="radio" name="price" value="mayorPrecio">  Meyor a menor </label><br>
+                    <label><input type="radio" name="price" value="60"> Hasta $60 </label><br>
+                    <button type="submit">buscar >></button>
+                </form>
+            </div>
         </div>
-        <div id="resultado">
-            <h3>Productos elegidos</h3>
-
-        </div>
-        <!-- aca va a estar el producto selecionado y dependiendo la caterori se le pone un
-        icono de el producto, nombre y total -->
     </nav>
     <main>
-        <div id="container">
-            <!-- Aqui se le agregan los div -->
+        <span class="CodValido">CUPON: Hol4</span>
+        <div class="containerMain">
+            <div id="container">
+                <!-- Aqui se le agregan los div -->
+            </div>
         </div>
     </main>
     <footer>
     </footer>
-</body>
-<script src="./main.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+</body>
 </html>
